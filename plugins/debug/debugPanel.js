@@ -379,15 +379,14 @@
 
                         if (this.renderable instanceof me.Renderable) {
                             renderer.translate(
-                                -this.anchorPoint.x * this.body.width,
-                                -this.anchorPoint.y * this.body.height
+                                this.anchorPoint.x * this.body.width,
+                                this.anchorPoint.y * this.body.height
                             );
                         }
 
                         // draw the bounding rect shape
                         renderer.setColor("orange");
                         renderer.drawShape(this.getBounds());
-
 
                         renderer.translate(
                             this.pos.x +  this.ancestor._absPos.x,

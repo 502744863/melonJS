@@ -11,7 +11,7 @@ game.CoinEntity = me.CollectableEntity.extend({
         this.renderable = game.texture.createSpriteFromName("coin.png");
 
         // set the renderable position to center
-        this.anchorPoint.set(0.5, 0.5);
+        this.renderable.anchorPoint.set(0.0, 0.0);
     },
 
     /**

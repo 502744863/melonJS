@@ -174,7 +174,10 @@
                     atlas[frame.filename] = {
                         name         : frame.filename, // frame name
                         offset       : new me.Vector2d(s.x, s.y),
-                        anchorPoint  : (hasTextureAnchorPoint) ? new me.Vector2d(originX / s.w, originY / s.h) : null,
+                        anchorPoint  : (hasTextureAnchorPoint) ? new me.Vector2d(
+                                        Math.abs(1 - (originX / s.w)),
+                                        Math.abs(1 - (originY / s.h))
+                                       ) : null,
                         width        : s.w,
                         height       : s.h,
                         angle        : (frame.rotated === true) ? nhPI : 0

@@ -271,12 +271,13 @@
             );
 
             if (this.renderable instanceof me.Renderable) {
+                var bounds = this.getBounds();
                 // draw the child renderable's anchorPoint at the entity's
                 // anchor point.  the entity's anchor point is a scale from
                 // body position to body width/height
                 renderer.translate(
-                    this.anchorPoint.x * this.body.width,
-                    this.anchorPoint.y * this.body.height
+                    -this.anchorPoint.x * bounds.width,
+                    -this.anchorPoint.y * bounds.height
                 );
             }
         },

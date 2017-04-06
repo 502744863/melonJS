@@ -43,6 +43,9 @@ game.PathEnemyEntity = me.Entity.extend({
 
         // a specific flag to recognize these enemies
         this.isMovingEnemy = true;
+
+        // set the renderable position to bottom center
+        this.anchorPoint.set(0.5, -0.25);
     },
 
 
@@ -129,10 +132,6 @@ game.SlimeEnemyEntity = game.PathEnemyEntity.extend({
 
         // set default one
         this.renderable.setCurrentAnimation("walk");
-
-        // set the renderable position to bottom center
-        this.anchorPoint.set(0.5, 1.0);
-
     }
 });
 
@@ -165,8 +164,5 @@ game.FlyEnemyEntity = game.PathEnemyEntity.extend({
 
         // set default one
         this.renderable.setCurrentAnimation("walk");
-
-        // set the renderable position to bottom center
-        this.anchorPoint.set(0.5, 1.0);
     }
 });

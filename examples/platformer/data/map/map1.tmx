@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="left-down" width="50" height="30" tilewidth="35" tileheight="35" backgroundcolor="#d0f4f7" nextobjectid="36">
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="50" height="30" tilewidth="35" tileheight="35" backgroundcolor="#d0f4f7" nextobjectid="37">
  <tileset firstgid="1" source="tileset.tsx"/>
  <imagelayer name="Background" y="538" offsetx="0" offsety="538">
-  <image source="../img/background.png"/>
+  <image source="../img/background.png" width="1024" height="512"/>
   <properties>
    <property name="anchorPoint" value="json:{&quot;x&quot;:0,&quot;y&quot;:1}"/>
    <property name="ratio" value="0.25"/>
@@ -10,7 +10,7 @@
   </properties>
  </imagelayer>
  <imagelayer name="Clouds" y="128" offsetx="0" offsety="128">
-  <image source="../img/clouds.png"/>
+  <image source="../img/clouds.png" width="512" height="512"/>
   <properties>
    <property name="ratio" value="0.5"/>
    <property name="repeat" value="repeat-x"/>
@@ -37,13 +37,13 @@
   </object>
   <object id="25" name="me.Entity" gid="46" x="910" y="1050" width="70" height="70">
    <properties>
-    <property name="anchorPoint" value="json:{&quot;x&quot;:0.5,&quot;y&quot;:1}"/>
+    <property name="anchorPoint" value="json:{&quot;x&quot;:0.0,&quot;y&quot;:0.35}"/>
     <property name="shapes" value="eval:[new me.Rect(0,35,70,35)]"/>
    </properties>
   </object>
-  <object id="26" name="me.Entity" gid="2147483694" x="770" y="1050" width="70" height="70">
+  <object id="26" name="me.Entity" gid="46" x="770" y="1050" width="70" height="70">
    <properties>
-    <property name="anchorPoint" value="json:{&quot;x&quot;:0.5,&quot;y&quot;:1}"/>
+    <property name="anchorPoint" value="json:{&quot;x&quot;:0.0,&quot;y&quot;:0.35}"/>
     <property name="shapes" value="eval:[new me.Rect(0,35,70,35)]"/>
    </properties>
   </object>
